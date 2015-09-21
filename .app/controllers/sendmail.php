@@ -34,12 +34,12 @@ if(isset($_POST['data'])){
 <br>
 <p><i>Caso não tenha solicitado este cadastramento, por favor desconsidere este e-mail e receba nossas sinceras desculpas pelo transtorno.</i></p>
 <br>
-<p><b><big>Bill Rocha</big></b><br>Diretor Geral</p>
+<p><b><big>Bill Rocha</big></b><br>Diretor & Editor Geral</p>
 <hr>
 <i>E-mail automático: não responda!</i>';
 
     //Enviando EMAIL
-    @mail($mail, 'Cadastro meujornal', $html, $headers, "-reditor@meu.jor.br");
+    @mail($mail, 'Cadastro no MEUjornal', $html, $headers, "-reditor@meu.jor.br");
 
     //Respondendo ao usuário do site
     exit(json_encode(['ok'=>'ok']));
