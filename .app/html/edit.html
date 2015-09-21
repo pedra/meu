@@ -1,0 +1,212 @@
+<h1>Editor</h1>
+
+<div class="editor"> <!-- BEGIN CLASS: editor -->
+
+    <div class="editform">
+        <label>Título da Publicação</label>
+        <input type="text" id="titulo" placeholder="Título da Publicação" size="30">
+
+        <label>Destaque</label>
+        <textarea id="destaque"></textarea>
+
+        <label>Local da Publicação</label>
+        <input type="text" id="local" placeholder="Cidade, Estado, País">
+
+        <label>Data programada para publicação</label>
+        <div class="inline">
+            <label>Dia</label>
+            <select id="dia">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+        </div>
+        <div class="inline">
+            <label>Mês</label>
+            <select id="mes">
+                <option value="1">Janeiro</option>
+                <option value="2">Fevereiro</option>
+                <option value="3">Março</option>
+                <option value="4">Abril</option>
+                <option value="5">Maio</option>
+                <option value="6">Junho</option>
+                <option value="7">Julho</option>
+                <option value="8">Agosto</option>
+                <option value="9">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+            </select>
+        </div>
+        <div class="inline">
+            <label>Ano</label>
+            <select id="ano">
+                <option value="15">2015</option>
+                <option value="16">2016</option>
+                <option value="17">2017</option>
+                <option value="18">2018</option>
+                <option value="19">2019</option>
+                <option value="20">2020</option>
+                <option value="21">2021</option>
+                <option value="22">2022</option>
+                <option value="23">2023</option>
+                <option value="24">2024</option>
+                <option value="25">2025</option>
+                <option value="26">2026</option>
+                <option value="27">2027</option>
+                <option value="28">2028</option>
+                <option value="29">2029</option>
+                <option value="30">2030</option>
+            </select>
+        </div>
+        <div class="inline">
+            <label>Hora</label>
+            <select id="hora">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="edithelp">
+        <h3>Parâmetros de formatação de texto</h3>
+        <table class="parametros">
+            <tr><th>Formato</th><th>Parâmetro</th><th>HTML</th></tr>
+            <tr><td><h2>Título</h2></td><td>#</td><td>&lt;h2&gt;&lt;/h2&gt;</td></tr>
+            <tr><td><h3>Sub-título</h3></td><td>##</td><td>&lt;h3&gt;&lt;/h3&gt;</td></tr>
+            <tr><td>Parágrafo</td><td>+</td><td>&lt;p&gt;&lt;/p&gt;</td></tr>
+            <tr><td><blockquote>Destaque</blockquote></td><td>""</td><td>&lt;blockquote&gt;&lt;/blockquote&gt;</td></tr>
+            <tr><td><img src="<x:url/>favicon.ico">Legenda da imagem</td><td>[img]http://name.img||Legenda da imagem</td><td>&lt;figure><br> &lt;img src="http://nome.img"&gt;<br> &lt;legend&gt;Legenda da imagem&lt;/legend&gt;<br>&lt;/figure&gt;</td></tr>
+            <tr><td><b>Negrito</b></td><td>*(conteudo)*</td><td>&lt;b&gt;conteudo&lt;/b&gt;</td></tr>
+            <tr><td><i>Itálico</i></td><td>_(conteudo)_</td><td>&lt;i&gt;conteudo&lt;/i&gt;</td></tr>
+            <tr><td><s>Tachado</s></td><td>-(conteudo)-</td><td>&lt;s&gt;conteudo&lt;/s&gt;</td></tr>
+        </table>
+        <p class="quiet">Os quatro primeiros parâmetros devem teminar com uma "nova linha".</p>
+    </div>
+
+    <div id="editar">
+        <textarea id="txtarea">
+#Título de uma seção
+##Sub-título de seção
+
+table(
+Produto
+Marca
+Quantidade
+Val. Unitário
+Val. Total
+
+Leite Condensado
+Nestle
+3
+3,99
+11,87
+
+Macarrão Talharim
+Piraquê
+2
+4,80
+-(7,60)- *(9,60)*
+)table
+
+
+[list]3
+
+""Destaque de trechos no texto começam com duas aspas duplas ("") em sequência, terminando a linha com uma nova linha.
+
+[img]http://meu.jor.loc/img/mjf.jpg||Legenda [opcional] da Imagem.
+
+#Mais formatação
+
++Parágrafos começam com sinal (+) - Você pode usar formatação no meio do texto como os exemplos que se seguem. *(Está sequência está em negrito)*, _(esta outra está em itálico)_ e -(está está tachada, deletada)- o restante do testo está com formatação de parágrafo normal.
+
++Se você digitar tags de HTML, estás serão convertidas e não terão o efeito esperado. Porém, serão exibidas como neste exemplo:
++<button onclick="document.location = 'http://google.com'">Baixar seu prêmio</button>.
+
++Na medida que for digitando o texto vai sendo convertido e mostrado na *(área de "preview")*. Você pode conferir o que está produzindo, corrigir em tempo real e tudo isso com as mãos livres - _(*(sem a necessidade do uso do mouse)*)_. Assim o foco fica apenas no texto!
+
+
+#Fim!
+        </textarea>
+        <textarea id="txtarea1"></textarea>
+        <div class="content" id="cView"></div>
+    </div>
+
+    <div class="cad" id="cad">
+        <label>Cadastre-se!</label>
+
+        <input type="text" id="email" placeholder="seu@email.com" size="27" maxlength="100"><button type="button" id="cadastro">></button>
+
+        <div class="tolog">
+            <label>Se tiver uma <b>chave</b> digite abaixo e click no botão de acesso.<br>Ou informe seu e-mail acima e enviaremos uma - <b>grátis!</b></label>
+            <input type="text" id="key" placeholder="chave" size="41" maxlength="100" value="kECwtbFB+A4xKw7F636Iv7t0l6H0v"><button type="button" id="go">></button>
+        </div>
+    </div>
+
+    <div class="users">
+        <x:users/>
+    </div>
+
+    <!-- TESTE BEGIN -->
+
+    <div class="files">
+        <h2>Send & Receive Files</h2>
+        <input type="file" style="display:none" id="files" name="" value="" placeholder="" multiple>
+        <button id="btAddFile">Add Files</button><button id="btSend">Send</button><button id="download">Download</button>
+
+        <div id="fileList"></div>
+    </div>
+
+
+</div> <!-- END CLASS: editor -->
